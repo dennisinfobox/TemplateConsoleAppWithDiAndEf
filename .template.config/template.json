@@ -1,0 +1,14 @@
+{
+	"author": "dennisinfobox",
+	"classifications": [
+		"Console"
+	],
+	"name": "Console Starter with DI and EF",
+	"identity": "Dennisinfobox.StarterConsoleDiEf",
+	"shortName": "consoledief",
+	"tags": {
+		"language": "C#"
+	},
+	"sourceName": "TemplateConsoleAppWithDiAndEf",
+	"preferNameDirectory": "true"
+}

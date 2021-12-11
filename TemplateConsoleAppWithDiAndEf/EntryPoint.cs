@@ -20,7 +20,7 @@ namespace TemplateConsoleAppWithDiAndEf
 
         public void Dispose()
         {
-            
+            _abstractHost.Dispose();
         }
 
         public async Task StartAsync(CancellationToken cancellationToken = new CancellationToken())
@@ -29,9 +29,10 @@ namespace TemplateConsoleAppWithDiAndEf
             await Run();
         }
 
-        public Task StopAsync(CancellationToken cancellationToken = new CancellationToken())
+        public async Task StopAsync(CancellationToken cancellationToken = new CancellationToken())
         {
-            
+            await _abstractHost.StopAsync(cancellationToken);
+            await Console.Out.WriteLineAsync("Stoped");
         }
 
         public IServiceProvider Services { get; }
