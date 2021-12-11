@@ -9,3 +9,7 @@ $ dotnet new --install <PATH> # where <PATH> is the path to the folder containin
 ```
 
 For creating new project use command:
+
+```
+$ dotnet new consoledief -n Project.Name
+```
